@@ -1,0 +1,364 @@
+[2024-03-03 10:11:27.706 -06:00 [WRN] The WebRootPath was not found: C:\Users\Propietario\Desktop\serilog\SalesOrdersAPI\wwwroot. Static files may be unavailable.
+][2024-03-03 10:11:27.810 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/swagger/index.html - null null
+][2024-03-03 10:11:27.864 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+][2024-03-03 10:11:27.866 -06:00 [INF] Hosting environment: Development
+][2024-03-03 10:11:27.868 -06:00 [INF] Content root path: C:\Users\Propietario\Desktop\serilog\SalesOrdersAPI
+][2024-03-03 10:11:27.990 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/swagger/index.html - 200 null text/html;charset=utf-8 186.2147ms
+][2024-03-03 10:11:28.012 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/_framework/aspnetcore-browser-refresh.js - null null
+][2024-03-03 10:11:28.019 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 6.0009ms
+][2024-03-03 10:11:28.032 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/_vs/browserLink - null null
+][2024-03-03 10:11:28.074 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.6093ms
+][2024-03-03 10:11:28.123 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/swagger/v1/swagger.json - null null
+][2024-03-03 10:11:28.209 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 86.0073ms
+][2024-03-03 10:11:39.394 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/WeatherForecast - null null
+][2024-03-03 10:11:39.407 -06:00 [INF] Executing endpoint 'SalesOrderAPI.Controllers.WeatherForecastController.Get (SalesOrderAPI)'
+][2024-03-03 10:11:39.419 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[SalesOrderAPI.WeatherForecast] Get() on controller SalesOrderAPI.Controllers.WeatherForecastController (SalesOrderAPI).
+][2024-03-03 10:11:39.426 -06:00 [INF] Executing ObjectResult, writing value of type 'SalesOrderAPI.WeatherForecast[]'.
+][2024-03-03 10:11:39.449 -06:00 [INF] Executed action SalesOrderAPI.Controllers.WeatherForecastController.Get (SalesOrderAPI) in 26.7864ms
+][2024-03-03 10:11:39.449 -06:00 [INF] Executed endpoint 'SalesOrderAPI.Controllers.WeatherForecastController.Get (SalesOrderAPI)'
+][2024-03-03 10:11:39.450 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/WeatherForecast - 200 null application/json; charset=utf-8 55.7253ms
+][2024-03-03 10:12:48.237 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/Customer/GetAll - null null
+][2024-03-03 10:12:48.238 -06:00 [INF] Executing endpoint 'SalesOrderAPI.Controllers.CustomerController.GetAll (SalesOrderAPI)'
+][2024-03-03 10:12:48.244 -06:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[CustomerEntity]] GetAll() on controller SalesOrderAPI.Controllers.CustomerController (SalesOrderAPI).
+][2024-03-03 10:12:48.355 -06:00 [INF] |Log ||Testing
+][2024-03-03 10:13:04.080 -06:00 [ERR] An error occurred using the connection to database 'Sales_DB' on server 'LAPTOP-4K7AS2ME\SQLEXPRESS'.
+][2024-03-03 10:13:04.105 -06:00 [ERR] An exception occurred while iterating over the results of a query for context type 'SalesOrderAPI.Models.Sales_DBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+][2024-03-03 10:13:04.192 -06:00 [INF] Executed action SalesOrderAPI.Controllers.CustomerController.GetAll (SalesOrderAPI) in 15947.862ms
+][2024-03-03 10:13:04.193 -06:00 [INF] Executed endpoint 'SalesOrderAPI.Controllers.CustomerController.GetAll (SalesOrderAPI)'
+][2024-03-03 10:13:04.212 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CustomerContainer.Getall() in C:\Users\Propietario\Desktop\serilog\SalesOrdersAPI\Container\CustomerContainer.cs:line 19
+   at SalesOrderAPI.Controllers.CustomerController.GetAll() in C:\Users\Propietario\Desktop\serilog\SalesOrdersAPI\Controllers\CustomerController.cs:line 24
+   at lambda_method8(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+][2024-03-03 10:13:04.225 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/Customer/GetAll - 500 null text/plain; charset=utf-8 15988.0268ms
+][2024-03-03 10:40:00.825 -06:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+][2024-03-03 10:40:00.859 -06:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+][2024-03-03 10:40:00.860 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+][2024-03-03 10:40:00.904 -06:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+][2024-03-03 10:40:00.905 -06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+][2024-03-03 10:40:00.907 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+][2024-03-03 10:40:00.914 -06:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+][2024-03-03 10:40:34.628 -06:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+][2024-03-03 10:40:34.663 -06:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+][2024-03-03 10:40:34.666 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+][2024-03-03 10:40:34.667 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+][2024-03-03 10:40:34.677 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+][2024-03-03 10:40:34.692 -06:00 [INF] No migrations were applied. The database is already up to date.
+][2024-03-03 10:41:57.092 -06:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+][2024-03-03 10:41:57.122 -06:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+][2024-03-03 10:41:57.124 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+][2024-03-03 10:41:57.125 -06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+][2024-03-03 10:41:57.134 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+][2024-03-03 10:42:49.122 -06:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+][2024-03-03 10:42:49.154 -06:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+][2024-03-03 10:42:49.156 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+][2024-03-03 10:42:49.157 -06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+][2024-03-03 10:42:49.167 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+][2024-03-03 10:46:00.541 -06:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+][2024-03-03 10:46:00.572 -06:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+][2024-03-03 10:46:00.574 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+][2024-03-03 10:46:00.575 -06:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+][2024-03-03 10:46:00.586 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+][2024-03-03 10:46:00.596 -06:00 [INF] Applying migration '20240303164528_InitialCreate'.
+][2024-03-03 10:46:00.643 -06:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_Category] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NULL,
+    CONSTRAINT [PK_tbl_Category] PRIMARY KEY ([Id])
+);
+][2024-03-03 10:46:00.646 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_Customer] (
+    [Code] nvarchar(20) NOT NULL,
+    [Name] nvarchar(200) NOT NULL,
+    [Address] nvarchar(max) NULL,
+    [Phoneno] nvarchar(50) NULL,
+    [Email] nvarchar(50) NULL,
+    [IsActive] bit NULL,
+    [CreateUser] nvarchar(50) NULL,
+    [ModifyUser] nvarchar(50) NULL,
+    [CreateDate] datetime NULL,
+    [ModifyDate] datetime NULL,
+    CONSTRAINT [PK_tbl_customer] PRIMARY KEY ([Code])
+);
+][2024-03-03 10:46:00.647 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_mastervariant] (
+    [ID] int NOT NULL IDENTITY,
+    [VarintName] varchar(20) NULL,
+    [VarinatType] varchar(1) NULL,
+    [IsActive] bit NULL,
+    CONSTRAINT [PK_tbl_mastervariant] PRIMARY KEY ([ID])
+);
+][2024-03-03 10:46:00.649 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_product] (
+    [Code] varchar(20) NOT NULL,
+    [Name] varchar(250) NULL,
+    [Price] decimal(18,3) NULL,
+    [Category] int NULL,
+    [Remarks] varchar(50) NULL,
+    CONSTRAINT [PK_tbl_product] PRIMARY KEY ([Code])
+);
+][2024-03-03 10:46:00.651 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_productvarinat] (
+    [ID] int NOT NULL IDENTITY,
+    [ProductCode] varchar(20) NOT NULL,
+    [ColorId] int NULL,
+    [SizeId] int NULL,
+    [Remarks] nvarchar(100) NULL,
+    [Price] decimal(18,2) NULL,
+    [Isactive] bit NULL,
+    CONSTRAINT [PK_tbl_productvarinat] PRIMARY KEY ([ID])
+);
+][2024-03-03 10:46:00.652 -06:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_role] (
+    [roleid] varchar(50) NOT NULL,
+    [Name] varchar(50) NULL,
+    CONSTRAINT [PK_tbl_role] PRIMARY KEY ([roleid])
+);
+][2024-03-03 10:46:00.654 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_SalesHeader] (
+    [InvoiceNo] nvarchar(20) NOT NULL,
+    [InvoiceDate] smalldatetime NOT NULL,
+    [CustomerId] nvarchar(20) NOT NULL,
+    [Customer Name] nvarchar(100) NULL,
+    [DeliveryAddress] ntext NULL,
+    [Remarks] ntext NULL,
+    [Total] numeric(18,2) NULL,
+    [Tax] numeric(18,4) NULL,
+    [NetTotal] numeric(18,2) NULL,
+    [CreateUser] nvarchar(50) NULL,
+    [CreateDate] smalldatetime NULL,
+    [ModifyUser] nvarchar(50) NULL,
+    [ModifyDate] smalldatetime NULL,
+    CONSTRAINT [PK_tbl_SaleHeader] PRIMARY KEY ([InvoiceNo])
+);
+][2024-03-03 10:46:00.656 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_SalesProductInfo] (
+    [InvoiceNo] nvarchar(20) NOT NULL,
+    [ProductCode] nvarchar(20) NOT NULL,
+    [ProductName] nvarchar(100) NULL,
+    [Qty] int NULL,
+    [SalesPrice] numeric(18,3) NULL,
+    [Total] numeric(18,2) NULL,
+    [CreateUser] nvarchar(50) NULL,
+    [CreateDate] smalldatetime NULL,
+    [ModifyUser] nvarchar(50) NULL,
+    [ModifyDate] smalldatetime NULL,
+    CONSTRAINT [PK_tbl_SalesInvoiceDetail] PRIMARY KEY ([InvoiceNo], [ProductCode])
+);
+][2024-03-03 10:46:00.659 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_user] (
+    [userid] varchar(50) NOT NULL,
+    [Name] varchar(50) NULL,
+    [password] varchar(50) NULL,
+    [Email] varchar(50) NULL,
+    [Role] varchar(50) NULL,
+    [IsActive] bit NULL,
+    CONSTRAINT [PK_tbl_user] PRIMARY KEY ([userid])
+);
+][2024-03-03 10:46:00.661 -06:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240303164528_InitialCreate', N'8.0.2');
+][2024-03-03 10:46:56.005 -06:00 [WRN] The WebRootPath was not found: C:\Users\Propietario\Desktop\serilog\SalesOrdersAPI\wwwroot. Static files may be unavailable.
+][2024-03-03 10:46:56.101 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/swagger/index.html - null null
+][2024-03-03 10:46:56.143 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+][2024-03-03 10:46:56.145 -06:00 [INF] Hosting environment: Development
+][2024-03-03 10:46:56.146 -06:00 [INF] Content root path: C:\Users\Propietario\Desktop\serilog\SalesOrdersAPI
+][2024-03-03 10:46:56.266 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/swagger/index.html - 200 null text/html;charset=utf-8 169.1618ms
+][2024-03-03 10:46:56.284 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/_framework/aspnetcore-browser-refresh.js - null null
+][2024-03-03 10:46:56.289 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 4.2684ms
+][2024-03-03 10:46:56.310 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/_vs/browserLink - null null
+][2024-03-03 10:46:56.348 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.2012ms
+][2024-03-03 10:46:56.401 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/swagger/v1/swagger.json - null null
+][2024-03-03 10:46:56.482 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.1685ms
+][2024-03-03 10:47:01.106 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/Customer/GetAll - null null
+][2024-03-03 10:47:01.111 -06:00 [INF] Executing endpoint 'SalesOrderAPI.Controllers.CustomerController.GetAll (SalesOrderAPI)'
+][2024-03-03 10:47:01.124 -06:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[CustomerEntity]] GetAll() on controller SalesOrderAPI.Controllers.CustomerController (SalesOrderAPI).
+][2024-03-03 10:47:01.233 -06:00 [INF] |Log ||Testing
+][2024-03-03 10:47:02.039 -06:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Address], [t].[CreateDate], [t].[CreateUser], [t].[Email], [t].[IsActive], [t].[ModifyDate], [t].[ModifyUser], [t].[Name], [t].[Phoneno]
+FROM [tbl_Customer] AS [t]
+][2024-03-03 10:47:02.061 -06:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerEntity, SalesOrderAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+][2024-03-03 10:47:02.067 -06:00 [INF] Executed action SalesOrderAPI.Controllers.CustomerController.GetAll (SalesOrderAPI) in 939.9604ms
+][2024-03-03 10:47:02.067 -06:00 [INF] Executed endpoint 'SalesOrderAPI.Controllers.CustomerController.GetAll (SalesOrderAPI)'
+][2024-03-03 10:47:02.074 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/Customer/GetAll - 200 null application/json; charset=utf-8 968.7471ms
+][2024-03-03 10:48:34.175 -06:00 [WRN] The WebRootPath was not found: C:\Users\Propietario\Desktop\serilog\SalesOrdersAPI\wwwroot. Static files may be unavailable.
+][2024-03-03 10:48:34.274 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/swagger/index.html - null null
+][2024-03-03 10:48:34.318 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+][2024-03-03 10:48:34.321 -06:00 [INF] Hosting environment: Development
+][2024-03-03 10:48:34.322 -06:00 [INF] Content root path: C:\Users\Propietario\Desktop\serilog\SalesOrdersAPI
+][2024-03-03 10:48:34.469 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/swagger/index.html - 200 null text/html;charset=utf-8 201.7199ms
+][2024-03-03 10:48:34.486 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/_framework/aspnetcore-browser-refresh.js - null null
+][2024-03-03 10:48:34.495 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 4.4907ms
+][2024-03-03 10:48:34.510 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/_vs/browserLink - null null
+][2024-03-03 10:48:34.552 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.821ms
+][2024-03-03 10:48:34.603 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/swagger/v1/swagger.json - null null
+][2024-03-03 10:48:34.706 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 102.6869ms
+][2024-03-03 10:48:49.596 -06:00 [INF] Request starting HTTP/2 POST https://localhost:44318/Invoice/Save - application/json 472
+][2024-03-03 10:48:49.603 -06:00 [INF] CORS policy execution successful.
+][2024-03-03 10:48:49.607 -06:00 [INF] Executing endpoint 'SalesOrderAPI.Controllers.InvoiceController.Save (SalesOrderAPI)'
+][2024-03-03 10:48:49.629 -06:00 [INF] Route matched with {action = "Save", controller = "Invoice"}. Executing controller action with signature System.Threading.Tasks.Task`1[ResponseType] Save(InvoiceInput) on controller SalesOrderAPI.Controllers.InvoiceController (SalesOrderAPI).
+][2024-03-03 10:48:51.129 -06:00 [INF] Executed DbCommand (54ms) [Parameters=[@__invoiceHeader_InvoiceNo_0='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[InvoiceNo], [t].[CreateDate], [t].[CreateUser], [t].[CustomerId], [t].[Customer Name], [t].[DeliveryAddress], [t].[InvoiceDate], [t].[ModifyDate], [t].[ModifyUser], [t].[NetTotal], [t].[Remarks], [t].[Tax], [t].[Total]
+FROM [tbl_SalesHeader] AS [t]
+WHERE [t].[InvoiceNo] = @__invoiceHeader_InvoiceNo_0
+][2024-03-03 10:48:51.421 -06:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 20), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 20), @p4='?' (Size = 100), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime), @p7='?' (DbType = DateTime), @p8='?' (Size = 50), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Size = 4000), @p11='?' (Precision = 18) (Scale = 4) (DbType = Decimal), @p12='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p13='?' (Size = 20), @p14='?' (Size = 20), @p15='?' (DbType = DateTime), @p16='?' (Size = 50), @p17='?' (DbType = DateTime), @p18='?' (Size = 50), @p19='?' (Size = 100), @p20='?' (DbType = Int32), @p21='?' (Precision = 18) (Scale = 3) (DbType = Decimal), @p22='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [tbl_SalesHeader] ([InvoiceNo], [CreateDate], [CreateUser], [CustomerId], [Customer Name], [DeliveryAddress], [InvoiceDate], [ModifyDate], [ModifyUser], [NetTotal], [Remarks], [Tax], [Total])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+INSERT INTO [tbl_SalesProductInfo] ([InvoiceNo], [ProductCode], [CreateDate], [CreateUser], [ModifyDate], [ModifyUser], [ProductName], [Qty], [SalesPrice], [Total])
+VALUES (@p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22);
+][2024-03-03 10:48:51.470 -06:00 [INF] Executing ObjectResult, writing value of type 'ResponseType'.
+][2024-03-03 10:48:51.480 -06:00 [INF] Executed action SalesOrderAPI.Controllers.InvoiceController.Save (SalesOrderAPI) in 1845.5448ms
+][2024-03-03 10:48:51.481 -06:00 [INF] Executed endpoint 'SalesOrderAPI.Controllers.InvoiceController.Save (SalesOrderAPI)'
+][2024-03-03 10:48:51.500 -06:00 [INF] Request finished HTTP/2 POST https://localhost:44318/Invoice/Save - 200 null application/json; charset=utf-8 1904.7827ms
+][2024-03-03 10:49:08.785 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/Customer/GetAll - null null
+][2024-03-03 10:49:08.787 -06:00 [INF] Executing endpoint 'SalesOrderAPI.Controllers.CustomerController.GetAll (SalesOrderAPI)'
+][2024-03-03 10:49:08.791 -06:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[CustomerEntity]] GetAll() on controller SalesOrderAPI.Controllers.CustomerController (SalesOrderAPI).
+][2024-03-03 10:49:08.796 -06:00 [INF] |Log ||Testing
+][2024-03-03 10:49:08.825 -06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Address], [t].[CreateDate], [t].[CreateUser], [t].[Email], [t].[IsActive], [t].[ModifyDate], [t].[ModifyUser], [t].[Name], [t].[Phoneno]
+FROM [tbl_Customer] AS [t]
+][2024-03-03 10:49:08.827 -06:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[CustomerEntity, SalesOrderAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+][2024-03-03 10:49:08.828 -06:00 [INF] Executed action SalesOrderAPI.Controllers.CustomerController.GetAll (SalesOrderAPI) in 37.6079ms
+][2024-03-03 10:49:08.828 -06:00 [INF] Executed endpoint 'SalesOrderAPI.Controllers.CustomerController.GetAll (SalesOrderAPI)'
+][2024-03-03 10:49:08.829 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/Customer/GetAll - 200 null application/json; charset=utf-8 43.9149ms
+][2024-03-03 10:49:25.096 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/Product/GetAll - null null
+][2024-03-03 10:49:25.097 -06:00 [INF] Executing endpoint 'SalesOrderAPI.Controllers.ProductController.GetAll (SalesOrderAPI)'
+][2024-03-03 10:49:25.107 -06:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[ProductEntity]] GetAll() on controller SalesOrderAPI.Controllers.ProductController (SalesOrderAPI).
+][2024-03-03 10:49:25.162 -06:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Category], [t].[Name], [t].[Price], [t].[Remarks]
+FROM [tbl_product] AS [t]
+][2024-03-03 10:49:25.163 -06:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ProductEntity, SalesOrderAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+][2024-03-03 10:49:25.169 -06:00 [INF] Executed action SalesOrderAPI.Controllers.ProductController.GetAll (SalesOrderAPI) in 61.7105ms
+][2024-03-03 10:49:25.169 -06:00 [INF] Executed endpoint 'SalesOrderAPI.Controllers.ProductController.GetAll (SalesOrderAPI)'
+][2024-03-03 10:49:25.169 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/Product/GetAll - 200 null application/json; charset=utf-8 73.1743ms
+]
