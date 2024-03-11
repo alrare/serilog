@@ -1,0 +1,15 @@
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\bin\Debug\net8.0\SerilogConsole.exe
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\bin\Debug\net8.0\SerilogConsole.deps.json
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\bin\Debug\net8.0\SerilogConsole.runtimeconfig.json
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\bin\Debug\net8.0\SerilogConsole.dll
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\bin\Debug\net8.0\SerilogConsole.pdb
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\obj\Debug\net8.0\SerilogConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\obj\Debug\net8.0\SerilogConsole.AssemblyInfoInputs.cache
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\obj\Debug\net8.0\SerilogConsole.AssemblyInfo.cs
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\obj\Debug\net8.0\SerilogConsole.csproj.CoreCompileInputs.cache
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\obj\Debug\net8.0\SerilogConsole.sourcelink.json
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\obj\Debug\net8.0\SerilogConsole.dll
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\obj\Debug\net8.0\refint\SerilogConsole.dll
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\obj\Debug\net8.0\SerilogConsole.pdb
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\obj\Debug\net8.0\SerilogConsole.genruntimeconfig.cache
+C:\Users\Propietario\Desktop\serilog\SerilogBroxel\SerilogProject\SerilogConsole\obj\Debug\net8.0\ref\SerilogConsole.dll

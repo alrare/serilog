@@ -1,0 +1,16 @@
+[2024-03-10 10:29:27.090 -06:00 [WRN] The WebRootPath was not found: C:\Users\Propietario\Desktop\serilog\wwwroot. Static files may be unavailable.
+][2024-03-10 10:29:27.407 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/swagger/index.html - null null
+][2024-03-10 10:29:27.500 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+][2024-03-10 10:29:27.504 -06:00 [INF] Hosting environment: Development
+][2024-03-10 10:29:27.509 -06:00 [INF] Content root path: C:\Users\Propietario\Desktop\serilog
+][2024-03-10 10:29:28.476 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/swagger/index.html - 200 null text/html;charset=utf-8 1081.778ms
+][2024-03-10 10:29:28.536 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/_framework/aspnetcore-browser-refresh.js - null null
+][2024-03-10 10:29:28.559 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 21.9118ms
+][2024-03-10 10:29:28.612 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/_vs/browserLink - null null
+][2024-03-10 10:29:28.707 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.7714ms
+][2024-03-10 10:29:28.953 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/swagger/v1/swagger.json - null null
+][2024-03-10 10:29:28.998 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/swagger/favicon-32x32.png - null null
+][2024-03-10 10:29:29.023 -06:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+][2024-03-10 10:29:29.024 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/swagger/favicon-32x32.png - 200 628 image/png 26.1625ms
+][2024-03-10 10:29:29.186 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 232.1361ms
+]

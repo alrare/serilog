@@ -1,0 +1,13 @@
+[2024-03-10 17:29:05.144 -06:00 [WRN] The WebRootPath was not found: C:\Users\Propietario\Desktop\serilog\SerilogSalesOrdesAPI\wwwroot. Static files may be unavailable.
+][2024-03-10 17:29:05.277 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/swagger/index.html - null null
+][2024-03-10 17:29:05.329 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+][2024-03-10 17:29:05.331 -06:00 [INF] Hosting environment: Development
+][2024-03-10 17:29:05.333 -06:00 [INF] Content root path: C:\Users\Propietario\Desktop\serilog\SerilogSalesOrdesAPI
+][2024-03-10 17:29:06.194 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/swagger/index.html - 200 null text/html;charset=utf-8 922.1719ms
+][2024-03-10 17:29:06.218 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/_framework/aspnetcore-browser-refresh.js - null null
+][2024-03-10 17:29:06.249 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 30.8509ms
+][2024-03-10 17:29:06.281 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/_vs/browserLink - null null
+][2024-03-10 17:29:06.354 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.8042ms
+][2024-03-10 17:29:06.514 -06:00 [INF] Request starting HTTP/2 GET https://localhost:44318/swagger/v1/swagger.json - null null
+][2024-03-10 17:29:06.678 -06:00 [INF] Request finished HTTP/2 GET https://localhost:44318/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 163.7509ms
+]

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Propietario\\Desktop\\serilog\\SerilogSalesOrdesAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E72AC8E-9E98-4EDD-A07D-50843525F003}|SalesOrderAPI.csproj|c:\\users\\propietario\\desktop\\serilog\\serilogsalesordesapi\\models\\sales_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E72AC8E-9E98-4EDD-A07D-50843525F003}|SalesOrderAPI.csproj|solutionrelative:models\\sales_dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E72AC8E-9E98-4EDD-A07D-50843525F003}|SalesOrderAPI.csproj|c:\\users\\propietario\\desktop\\serilog\\serilogsalesordesapi\\container\\customercontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E72AC8E-9E98-4EDD-A07D-50843525F003}|SalesOrderAPI.csproj|solutionrelative:container\\customercontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E72AC8E-9E98-4EDD-A07D-50843525F003}|SalesOrderAPI.csproj|c:\\users\\propietario\\desktop\\serilog\\serilogsalesordesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E72AC8E-9E98-4EDD-A07D-50843525F003}|SalesOrderAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sales_DBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Propietario\\Desktop\\serilog\\SerilogSalesOrdesAPI\\Models\\Sales_DBContext.cs",
+              "RelativeDocumentMoniker": "Models\\Sales_DBContext.cs",
+              "ToolTip": "C:\\Users\\Propietario\\Desktop\\serilog\\SerilogSalesOrdesAPI\\Models\\Sales_DBContext.cs",
+              "RelativeToolTip": "Models\\Sales_DBContext.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T00:28:27.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Propietario\\Desktop\\serilog\\SerilogSalesOrdesAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Propietario\\Desktop\\serilog\\SerilogSalesOrdesAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T00:21:10.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerContainer.cs",
+              "DocumentMoniker": "C:\\Users\\Propietario\\Desktop\\serilog\\SerilogSalesOrdesAPI\\Container\\CustomerContainer.cs",
+              "RelativeDocumentMoniker": "Container\\CustomerContainer.cs",
+              "ToolTip": "C:\\Users\\Propietario\\Desktop\\serilog\\SerilogSalesOrdesAPI\\Container\\CustomerContainer.cs",
+              "RelativeToolTip": "Container\\CustomerContainer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T23:43:25.601Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
